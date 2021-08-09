@@ -1,0 +1,982 @@
+// This is where you can import other stylesheets or write your scss code
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+//grid für index.html
+.container2{
+    display: grid;
+    grid-template-rows:  15%  1fr 73% 20% 1fr;
+    grid-template-columns: 1fr 3fr 1fr 5fr 1fr;
+    grid-template-areas: 
+   
+    ". titr menubar menubar ."
+    ". . . . ."
+    ". pic pic main ."
+    "fus fus fus fus fus"
+    ". . . . ."
+   
+    ;
+}
+
+.hamburger{
+    display: none;
+}
+
+
+#titr{
+    grid-area: titr;
+}
+
+#menu{
+    grid-area: menubar;
+}
+
+#pic{
+    grid-area: pic;
+}
+
+#main{
+    grid-area: main;
+}
+
+#fus{
+    grid-area: fus;
+}
+
+
+body{
+    background-color: #eae5e5;
+    //height: 52rem;
+}
+
+.hide{
+    color: #eae5e5;
+}
+
+.titr-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.font-titr1{
+    color: #4d4d4d;
+    font-family: normal normal bold  'noticia text',serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.font-titr2{
+    color: #4d4d4d;
+    font-family: normal normal bold 43px/1.4em 'noticia text',serif;
+    font-size: 18px;
+   
+}
+
+.menu-container{
+   display: flex;
+   align-items:center;
+   margin-top: 40px;
+   margin-left: 10px;
+}
+
+.menu-items{
+    //border: 1px solid red;
+    width: 400px;
+    height: 25px;
+}
+
+.a-link{
+    text-decoration: none;
+    color: #8B8B8B;
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 1s;
+}
+
+#home{
+    color: #61d0d4;
+}
+
+a:hover{
+    color: #61d0d4;
+    transition: 1s;
+    text-decoration: none;
+}
+
+.img-portfoilo{
+    margin-top: 40px;
+   clip-path: circle(50% at 50% 50%);
+   filter: grayscale(100%);
+   opacity: 100%;
+
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.items-main{
+    /* border: 1px solid red; */
+}
+.hello{
+    font: normal normal normal 80px/1.2em 'noticia text',serif;
+    color: #4D4D4D;
+    font-weight: bold;
+}
+
+.aboutme{
+    font: normal normal normal 46px/1.2em 'noticia text',serif;
+    color: #4D4D4D;
+}
+
+.p-about{
+    font: normal normal normal 13px/1.4em 'open sans',sans-serif;
+    color: #4D4D4D;
+}
+
+.link-main-container{
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.link-main{
+    margin: 13px;
+}
+
+.ahover{
+    text-decoration: none;
+}
+
+.link-main1{
+    
+    width: 130px;
+    height: 130px;
+    background-color: #e94456;
+    border-radius: 100px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    transition: 0.5s;
+
+}
+
+.link-main1:hover{
+    background-color: #aa3140;
+    transition: 0.5s;
+}
+
+.link-main2{
+    
+    width: 130px;
+    height: 130px;
+    background-color: #61d0d4;
+    border-radius: 100px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    transition: 0.5s;
+
+}
+
+.link-main2:hover{
+    background-color: #479396;
+    transition: 0.5s;
+}
+
+.link-main3{
+    
+    width: 130px;
+    height: 130px;
+    background-color: #d1c92a;
+    border-radius: 100px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    transition:0.5s;
+
+}
+
+.link-main3:hover{
+    background-color: #aaa42a;
+    transition: 0.5s;
+}
+
+.link-main-pro{
+    
+    width: 80px;
+    height: 80px;
+    background-color: #61d0d4;
+    border-radius: 100px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    transition: 0.5s;
+
+}
+
+.aa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.aa-font{
+    color: white;
+    font-size: 13px;
+    
+    
+}
+
+.footer-container{
+    background-color: #e94456;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.footer-items{
+    /* border: 1px solid black; */
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.footer-items2{
+    margin: 7px;
+  
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #61d0d4;
+}
+
+.icon-farbe{
+    color: #e94456;
+}
+
+.foot-tit {
+    font: normal normal normal 13px/1.4em 'open sans',sans-serif;
+   
+    color: #FFFFFF;
+}
+
+.ff{
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ff-items{
+    /* border: 1px solid blue; */
+}
+
+.face-twitt{
+    font-size: 20px;
+   
+}
+
+.icon-farbe2{
+    color: #e94456;
+    font-size: 30px;
+}
+
+.new-class{
+    display: flex;
+    height: 200px;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+ }
+
+ .btnclass{
+    
+     color: rgb(94, 89, 89);
+     border: 1px solid rgb(207, 207, 207);
+ }
+ .btnclass:hover{
+    
+    color: #61d0d4;
+    border: 1px solid rgb(207, 207, 207);
+}
+ 
+
+ .ft-size{
+     font-size: 30px;
+ }
+
+
+ // grid für contact.html
+ .container-contact{
+    display: grid;
+    grid-template-rows: 1fr  3fr 1fr 1fr;
+    grid-template-columns: 1fr 5fr  1fr;
+
+    grid-template-areas: 
+    ". header-resume ."
+    ". main-resume ."
+    "fus fus fus "
+    ". . ."
+    ;
+}
+
+
+// grid für projects.html
+.container-grid-projects{
+    display: grid;
+    grid-template-rows: 1fr 1fr 15fr;
+    grid-template-columns: 1fr 5fr  1fr;
+
+    grid-template-areas: 
+    ". header-resume ."
+    ". titr-resume ."
+    ". main-resume ."
+    "fus fus fus "
+    ". . ."
+    ;
+}
+
+
+
+// grid für resume.html
+.container-grid-resume{
+    display: grid;
+    grid-template-rows: 1fr 1fr 8fr;
+    grid-template-columns: 1fr 5fr  1fr;
+
+    grid-template-areas: 
+    ". header-resume ."
+    ". titr-resume ."
+    ". main-resume ."
+    "fus fus fus "
+    ". . ."
+    ;
+}
+
+#header-resume{
+    grid-area:header-resume ;
+}
+
+#titr-resume{
+    grid-area:titr-resume ;
+}
+
+#main-resume{
+    grid-area:main-resume ;
+}
+
+
+
+.header-resume{
+    display: flex;
+    
+}
+
+.titr-font{
+margin-top: 20px;
+font: normal normal normal 80px/1.2em 'noticia text',serif;
+color: #4D4D4D;
+}
+
+.titr-project{
+    margin-top: 20px;
+    font: normal normal normal 80px/1.2em 'noticia text',serif;
+    color: #4D4D4D;
+    }
+
+.titr-contact{
+    
+    font: normal normal normal 80px/1.2em 'noticia text',serif;
+    color: #4D4D4D;
+    }
+.container-column{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.main-resume-container{
+    display: flex;
+}
+.line{
+    border-bottom:1px solid rgba(139, 139, 139, 1) ;
+    width: 40rem;
+    height: 10px;
+}
+
+.line-pro{
+    border-bottom:1px solid rgba(139, 139, 139, 1) ;
+    width: 55rem;
+    height: 10px;
+}
+.main-resume-item{
+    display: flex;
+}
+
+.color-box{
+    background-color: #e94456; 
+    
+}
+
+.circle-resume{
+    width: 130px;
+    height: 130px;
+    background-color: #e94456;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.font-circle{
+    color: white;
+    margin-left: 10px;
+    text-align: center;
+
+}
+.resume-item{
+    margin: 15px;
+   
+}
+
+.p-resume{
+    font: normal normal normal 13px/1.4em 'open sans',sans-serif;
+    color: #4D4D4D;
+   
+}
+
+.body-resume{
+    
+    background-color: #eae5e5;
+ }
+
+
+.h6-resume{
+    font-weight: bold;
+    color: rgb(87, 84, 84);
+    margin: 3;
+    font-size: 14px;
+}
+
+.main-right{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+   
+}
+
+.skill-circle{
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    background-color: #61d0d4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-main{
+    font-size: 44px;
+    color: white;
+}
+
+.main-right-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.line-skill{
+    border-bottom:1px solid rgba(139, 139, 139, 1) ;
+    width: 10rem;
+    height: 10px;
+}
+.line-pro2{
+    border-bottom:1px solid rgba(139, 139, 139, 1) ;
+    width: 15rem;
+    height: 10px;
+}
+.right-items{
+    margin: 5px;
+}
+
+.main-right-items{
+    margin: 10px;
+}
+
+.skill-font{
+    font-weight: bold;
+    color: rgb(87, 84, 84);
+    margin: 8px;
+    font-size: 14px;
+}
+
+.icon-main-languge{
+    font-size: 30px;
+    color: white;
+}
+
+::placeholder{
+    color: white;
+}
+
+/******************** für Mobile *******************/
+@media screen and (max-width: 635px){
+    // grid für index.html ******** Mobile
+    .container2{
+        display: grid;
+        grid-template-rows: repeat(4,auto);
+        grid-template-columns: auto 100px;
+        grid-template-areas: 
+       
+        "titr hamburger"
+        "menubar menubar"
+        "pic pic"
+        "main main"
+        "fus fus"
+        ;
+    }
+
+    #menu {
+        grid-area: menubar;
+    }
+    
+    #ham.clickon + #menu {
+        display: block;
+        background-color: #575454;
+        border-radius: 10px;
+
+    }
+
+
+    #ham{
+        grid-area: hamburger;
+    }
+    .hamburger{
+        display: block;
+        width: 55px;
+        height: 60px;
+        background-color: rgb(87, 84, 84);
+        border-radius: 5px;
+        margin-right: 25px;
+    
+    }
+
+    .ham-flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hamburger-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .ham-icon{
+        font-size: 30px;
+        color: white;
+        margin-top: 14px;
+    }
+
+
+    .margin-flex{
+        margin-right: 20px;
+    }
+
+    .font-titr1{
+        padding-left: 15px;
+     }
+
+    .font-titr2{
+       padding-left: 15px;
+    }
+
+    .footer-container{
+        background-color: #e94456;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    
+    }
+
+    .menu-container{
+       display: none;
+     }
+
+    .img-mobile{
+        height: 270px;
+        width: 270px;
+        
+    }
+
+    .item-pic{
+        display: flex;
+        justify-content: center;
+    }
+     
+    .link-main1{
+        width: 90px;
+        height: 90px;
+    }
+
+    .link-main2{
+        width: 90px;
+        height: 90px;
+    }
+
+    .link-main3{
+        width: 90px;
+        height: 90px;
+    }
+
+    .link-main{
+        margin: 5px;
+    }
+
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .p-about{
+        font: normal normal normal 13px/1.4em 'open sans',sans-serif;
+        color: #4D4D4D;
+        padding-left: 20px;
+       
+    }
+
+    .items-main{
+        margin: 20px;
+    }
+
+    .titr-font{
+        font: normal normal normal 80px/1.2em 'noticia text',serif;
+        color: #4D4D4D;
+        }
+
+  .titr-project{
+            
+            font: normal normal normal 30px 'noticia text',serif;
+            color: #4D4D4D;
+            }    
+
+            
+     // grid für resume.html ******** Mobile
+     .container-grid-resume{
+            display: grid;
+            grid-template-rows: repeat(5,auto);
+            grid-template-columns:  auto 100px;
+        
+            grid-template-areas: 
+            "header-resume"
+            "menubar"
+            "titr-resume"
+            "main-resume"
+            "fus"
+            ;
+        }
+        //Andre Code
+        #menu {
+            grid-area: menubar;
+        }
+        
+        #ham.clickon + #menu {
+            display: block;
+            background-color: #575454;
+            border-radius: 10px;
+    
+        }
+    
+    
+        #ham{
+            grid-area: hamburger;
+        }
+       //ende Andre Code
+    
+     .main-resume-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+      }
+
+    .p-resume{
+        width: 80%;
+    }
+
+    .header-resume{
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between
+        
+    }
+    .margin-flex2{
+        margin-right: 50px;
+    }
+
+    .titr-font{
+        margin-top: 70px;
+        font: normal normal normal 50px 'noticia text',serif;
+        color: #4D4D4D;
+        }
+
+        .font-titr1{
+            font-size: 1.5rem;
+        }
+        
+        .font-titr2{
+            color: #4d4d4d;
+            font-family: normal normal bold 30px 'noticia text',serif;
+            font-size: 18px;
+           
+        }
+        .items{
+           margin: 20px;
+        }
+
+        .main-resume-item{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .main-right{
+            display: flex;
+            flex-direction: row;
+            
+        }
+
+        .line{
+            width: 20rem;
+            
+        }
+
+        .circle-resume{
+            width: 100px;
+            height: 100px;
+            background-color: #e94456;
+            border-radius: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        
+        .font-circle{
+            color: white;
+            margin-left: 10px;
+            text-align: center;
+            font-size: 15px;
+        }
+
+// grid für contact.html ******** Mobile
+        .container-contact{
+            display: grid;
+            grid-template-rows: auto  auto auto ;
+            grid-template-columns: auto 100px;
+        
+            grid-template-areas: 
+            ". header-resume ."
+            ". menubar ."
+            ". main-resume ."
+            "fus fus fus "
+           
+            ;
+        }
+
+        .titr-contact{
+    
+            font: normal normal normal 50px 'noticia text',serif;
+            color: #4D4D4D;
+            }
+
+            .new-class{
+                display: flex;
+                height: 100px;
+                flex-direction: column;
+                justify-content: flex-end;
+                
+             }  
+             
+    
+             .row {
+                max-width: 100vw;
+                   }         
+             
+   
+}
+
+/* für Tablet */
+@media screen and (min-width:636px) and (max-width:990px){
+
+    .container2{
+        display: grid;
+        grid-template-rows:   auto auto auto auto;
+        grid-template-columns: auto auto;
+        grid-template-areas: 
+       
+        "titr menubar"
+        "pic pic"
+        "main main"
+        "fus fus"
+        ;
+    }
+
+    .font-titr1{
+        padding-left: 15px;
+     }
+
+    .font-titr2{
+       padding-left: 15px;
+    }
+
+    .footer-container{
+        background-color: #e94456;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .titr-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+   
+    
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .p-about{
+        font: normal normal normal 13px/1.4em 'open sans',sans-serif;
+        color: #4D4D4D;
+        padding-left: 20px;
+       
+    }
+
+    .items-main{
+        margin: 20px;
+    }
+
+    .item-pic{
+        display: flex;
+        justify-content: center;
+    } 
+
+    .menu-tablet{
+        display: flex;
+        justify-content: flex-end;
+    }
+        // Resume Tablet
+
+        .container-grid{
+            display: grid;
+            grid-template-rows: auto auto auto auto;
+            grid-template-columns: auto ;
+        
+            grid-template-areas: 
+            "header-resume"
+            "titr-resume"
+            "main-resume"
+            "fus"
+            ;
+        }
+
+        .main-resume-container{
+            display: flex;
+            flex-direction: column;
+      }
+
+    .p-resume{
+        width: 80%;
+    }
+
+
+
+    .header-resume{
+        //border: 1px solid red;
+        display: flex;
+        
+    }
+
+    .menu-container{
+        display: flex;
+        align-items: flex-end;
+     }
+     
+     .titr-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    
+    .font-titr1{
+        color: #4d4d4d;
+        font-family: normal normal bold  'noticia text',serif;
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+    
+    .font-titr2{
+        color: #4d4d4d;
+        font-family: normal normal bold 43px/1.4em 'noticia text',serif;
+        font-size: 18px;
+       
+    }
+
+    .main-right{
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+     
+
+
+    .container-contact{
+        display: grid;
+        grid-template-rows: auto  auto auto ;
+        grid-template-columns: auto;
+    
+        grid-template-areas: 
+        ". header-resume ."
+        ". main-resume ."
+        "fus fus fus "
+       
+        ;
+    }
+}
+
+/*
+.clickon{
+    height: 50rem;
+    width: 700px;
+    background-color: #4d4d4d;
+}*/
+
