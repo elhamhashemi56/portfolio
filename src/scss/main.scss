@@ -340,7 +340,8 @@ a:hover{
 // grid für projects.html
 .container-grid-projects{
     display: grid;
-    grid-template-rows: 1fr 1fr 15fr;
+    // grid-template-rows: 1fr 1fr 15fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 5fr  1fr;
 
     grid-template-areas: 
